@@ -100,7 +100,7 @@ public class AuthController {
             throw new IllegalArgumentException("Token Error");
         }
 
-        // 토큰에서 사용자 정보 가져오기
+        // 토큰에서 사용자 정보 가져오기1
         Claims info = jwtUtil.getUserInfoFromToken(token);
         // 사용자 username
         String username = info.getSubject();
